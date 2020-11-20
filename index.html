@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link> -->
+  <link rel="stylesheet" href="Styles.css"></link>
+  <link rel="stylesheet" href="bootstrap.min.css"> 
+  <title>Challenge</title>
+ </head>
+
+ <body>
+ <!--   news top stories -->
+    <div class ="container">
+      <h4 id ="h4-id">News Challenge</h4>
+      
+      <div class= "flexbox-container1">
+        <div>
+           <button class ="btn btn-primary" onclick="fetchNews()">Fetch News</button>
+        </div>
+        
+        <div>   
+            <button class ="btn btn-danger" onclick='fetchBBC()'>Fetch BBC</button>
+        </div>
+      </div>
+         
+        <div id="age-result1"></div><br>
+        <div id="age-result2"></div>
+
+    </div>        
+  
+    <br>
+
+ 
+
+
+
+
+    <div class ="container-1">
+      <h4 id ="h4-id">Challenge1: Your age in Days</h4>
+      
+      <div class= "flexbox-container1">
+        <div>
+           <button class ="btn btn-primary" onclick="ageInDays()">Click me</button>
+        </div>
+        
+        <div>   
+            <button class ="btn btn-danger" onclick='resetBtn()'>reset</button>
+        </div>
+      </div>
+         
+        <div id="age-result1"></div><br>
+        <div id="age-result2"></div>
+
+    </div>        
+  
+    <br>
+
+    <div class ="container-1">
+      <h4 id ="h4-id">Challenge2: Get Weather</h4>
+      
+      <div class= "flexbox-container">
+        <div>
+           <select name="country" id="country" onchange="assignCountry()">
+              <option value="Q258">Select a country</option> 
+              <option value="Q258">South Africa</option> 
+              <option value="Q954">Zimbabwe</option>      
+              <option value="Q1029">Mozambique</option>       
+              <option value="Q1013">Lesotho</option>
+              <option value="Q1020">Malawi</option>
+          </select>  
+         
+           <input type="text" class = "text-input" id="search-city" placeholder = "city"></input>
+           <button class ="btn btn-primary" onclick="getWeather()">Get Weather</button>
+           <div id= "matched-list"></div>
+        </div>
+     </div> 
+    <br>
+     <div class="container">
+       <div class="notification">
+         <div class= "weather-container btn-secondary">
+           <div class="weather-icon"><img src="icons\cloud.svg" width="50" height="60"></div>
+           <div id="tempreture"> -  ^ c</div>
+           <div id= "tempreture-description">-</div>
+         </div>
+       </div>
+     </div> 
+    
+    </div>        
+   
+   <br><br> 
+    <script src="JavaScript.js"> </script>
+   
+
+ </body>
+</html>
